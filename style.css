@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* All page */
+.all-page {
+    background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+    height: 100vh;
+
+}
+
+/* Play ground */
+.play-ground {
+    display: grid;
+    grid-template-areas:
+    'scorePlayer0 . scorePlayer1'
+    'currentScore0 main currentScore1'
+    '. middleText .';
+    width: 80%;
+    height: 80%;
+    background: #FBEAFF;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+}
+
+/* Total score */
+.total-score {
+    font-size: 1.5rem;
+    color: rgb(43, 42, 42);
+    font-weight: bold;
+}
+
+.total-score p:nth-of-type(2) {
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+
+/* Curren score */
+.current-score {
+    width:  9rem;
+    height: 9rem;
+    border-radius: 0.9rem;
+    background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+}
+
+.current-score p {
+    font-size: 1.2rem;
+    color: rgb(43, 42, 42);
+    text-align: center;
+    padding-top: 1.2rem;
+}
+
+.current-score p:nth-child(2) {
+    font-size: 1.6rem;
+}
+
+
+/* Grid items */
+.item1 { 
+    grid-area: scorePlayer0;
+    justify-self: center;
+    align-self: center;
+}
+
+.item2 {
+     grid-area: scorePlayer1;
+     justify-self: center;
+     align-self: center;
+}
+
+.item3 { 
+    grid-area: currentScore0;
+    justify-self: center;
+    align-self: start;
+}
+
+.item4 { 
+    grid-area: currentScore1; 
+    justify-self: center;
+    align-self: start;
+}
+
+.item5 { 
+    grid-area: main;
+    justify-self: center;
+    align-self: center;
+}
+
+.item6 { 
+    grid-area: middleText;
+    align-self: center;
+    
+}
+
+/* Buttons */
+.middle-text {
+   font-size: 1.3rem;
+   color: rgb(43, 42, 42);
+}
+
+.btn {
+    border: 0.1rem solid #8f61df;
+    padding: 0.3rem  0.6rem;
+    text-align: center;
+    border-radius: 0.3rem;
+    margin-bottom: 0.6rem;
+    background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+    max-width: 40rem;
+}
+
+.btn:hover {
+    background-image: linear-gradient(to bottom, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+}
+
