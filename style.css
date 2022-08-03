@@ -1,3 +1,9 @@
+:root {
+    --color: rgb(43, 42, 42);
+    --background: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+    --border: #8f61df;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -6,9 +12,8 @@
 
 /* All page */
 .all-page {
-    background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
     height: 100vh;
-
+    background: var(--background);
 }
 
 /* Play ground */
@@ -29,7 +34,7 @@
 /* Total score */
 .total-score {
     font-size: 1.5rem;
-    color: rgb(43, 42, 42);
+    color: var(--color);
     font-weight: bold;
 }
 
@@ -44,12 +49,12 @@
     width:  9rem;
     height: 9rem;
     border-radius: 0.9rem;
-    background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+    background-image: var(--background);
 }
 
 .current-score p {
     font-size: 1.2rem;
-    color: rgb(43, 42, 42);
+    color: var(--color);
     text-align: center;
     padding-top: 1.2rem;
 }
@@ -99,20 +104,29 @@
 /* Buttons */
 .middle-text {
    font-size: 1.3rem;
-   color: rgb(43, 42, 42);
+   color: var(--color);
 }
 
 .btn {
-    border: 0.1rem solid #8f61df;
+    border: 0.1rem solid var(--border);
     padding: 0.3rem  0.6rem;
     text-align: center;
     border-radius: 0.3rem;
     margin-bottom: 0.6rem;
-    background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+    background-image: var(--background);
     max-width: 40rem;
+    cursor: pointer;
 }
 
 .btn:hover {
     background-image: linear-gradient(to bottom, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
 }
 
+
+/* Active player */
+.active {
+    padding: 0.3rem  0.6rem;
+    border-radius: 0.9rem;
+    border: 0.1rem solid var(--border);
+    background-image: var(--background);
+}
